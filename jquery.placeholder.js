@@ -1,3 +1,5 @@
+// Copyright 2012, Артём Курбатов [tenorok.ru] | MIT License
+
 jQuery.fn.placeholder = function(options) {
 
     if(
