@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="jquery-1.4.4.min.js"></script>
+        <script src="jquery.placeholder.js"></script>
+        <title>jQuery - PlaceHolder</title>
+
+        <style type="text/css">
+            input,
+            textarea {
+                display: block;
+                margin: 30px 50px;
+                border: 1px solid;
+            }
+            textarea {
+                width: 300px;
+                height: 100px;
+                padding: 10px;
+            }
+            .class1 {
+                background: #00770B;
+            }
+
+            .class2 {
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <textarea placeholder="Введите сюда свой текст"></textarea>
+        <textarea placeholder="Место для комментария"></textarea>
+        <input placeholder="Логин" type="text">
+        <input placeholder="Пароль" type="password">
+
+        <script>
+            $(function() {
+                
+                // $('textarea, input').placeholder();
+                
+                $('textarea, input').placeholder({
+                    always: true,
+                    class: 'class1 class2',
+                    style: {
+                        'border': '1px solid green',
+                        'color': 'blue'
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
