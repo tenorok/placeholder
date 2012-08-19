@@ -10,7 +10,8 @@ jQuery.fn.placeholder = function(options) {
         return;
     
     var options = $.extend({
-        style: '',
+        always: false,
+        style: {},
         class: ''
     }, options),
 
